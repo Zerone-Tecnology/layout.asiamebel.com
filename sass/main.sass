@@ -1,0 +1,393 @@
+@import fonts
+@import vars
+
+@import _modals
+@import _pages/home
+
+// General
+html
+	scroll-behavior: smooth
+body
+	display: block
+	width: 100%
+	margin: 0 auto
+	background-color: #F5F5F5
+	font-style: normal
+*
+	transition: all .3s ease-in-out
+
+input,
+button
+	border: none
+	outline: none
+ul,
+button
+	margin: 0
+	padding: 0
+a
+	text-decoration: none
+h1, h2, h3, h4, h5, h6, p
+	margin: 0
+	font-family: $default-font
+	font-style: normal
+
+h1
+	font-weight: 300
+	font-size: 31px
+	line-height: 36px
+h2
+	font-weight: 400
+	font-size: 25px
+	line-height: 18px
+h3
+	font-size: 20px
+h4
+	font-weight: 500
+	font-size: 19px
+	line-height: 23px
+h5, h6
+	font-weight: 700
+h5
+	font-size: 16px
+	line-height: 20px
+h6
+	font-size: 15px
+	line-height: 20px
+p
+	font-weight: 400
+	font-size: 12px
+	line-height: 16px
+
+.box
+	width: 1110px
+	margin: auto
+.vertical,
+.horizontal,
+.center,
+.wrap
+	display: flex
+.vertical
+	flex-direction: column
+.inline,
+.center
+	align-items: center
+.end
+	align-items: end
+.center
+	justify-content: center
+.space
+	justify-content: space-between
+.wrap
+	flex-wrap: wrap
+
+.btn
+	cursor: pointer
+	padding: 0
+.bigtext
+	overflow: hidden
+	display: -webkit-box
+	-webkit-box-orient: vertical
+
+// Layout
+.header
+	&-top
+		padding: 3px 0 4px
+		background-color: $green
+		&__line
+			gap: 20px
+			.text
+				font-size: 11px
+				color: $white
+				&#language
+					font-weight: 600
+					font-size: 12px
+					line-height: 14px
+			.inline
+				gap: 5px
+	&-middle
+		padding: 16px 0 27px
+		.button
+			width: 100px
+			height: 40px
+	&-bottom
+		&__menu
+			list-style: none
+			gap: 30px
+			.text
+				font-size: 13px
+				color: $grey-menu
+		.button
+			width: 190px
+			height: 33px
+			border-radius: 16.5px
+			background-color: $pink
+			padding: 2px 2px 2px 6px
+			&-text
+				position: relative
+				padding-left: 10px
+				font-size: 13px
+				line-height: 13px
+				text-transform: uppercase
+				&::before
+					position: absolute
+					top: 50%
+					left: 0
+					content: ""
+					display: inline-block
+					width: 6px
+					height: 6px
+					border-radius: 50%
+					-moz-border-radius: 50%
+					-webkit-border-radius: 50%
+					background-color: $white
+					transform: translateY(-50%)
+			&-icon
+				width: 29px
+				height: 29px
+				border-radius: 50%
+				background-color: $pink-light
+	&-dropdown
+		display: none
+		position: absolute
+		width: 100vw
+		background-color: #F5F5F5
+		box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, .1)
+		z-index: 3
+		&__wrap
+			margin-top: 15.5px
+			padding: 10.5px 0 16px
+			border-top: 1px solid $grey
+			.title
+				font-weight: 300
+				line-height: 28px
+				color: $grey
+			.subtitle
+				margin: 7px 0 20px
+				color: #4C4F5E
+		&__menu
+			gap: 2px
+			list-style: none
+			.text
+				line-height: 23px
+				color: $grey-menu
+				&::before
+					position: absolute
+					top: 50%
+					left: 0
+					content: ""
+					display: inline-block
+					width: 5px
+					height: 5px
+					border-radius: 50%
+					-moz-border-radius: 50%
+					-webkit-border-radius: 50%
+					background-color: #4C4F5E
+					transform: translateY(-50%)
+				&:hover
+					position: relative
+					padding-left: 16px
+					font-size: 13px
+					color: #4C4F5E
+
+.footer
+	&-top
+		padding: 52px 0 42px
+		background-color: $grey
+		.text
+			color: $white
+			font-size: 13px
+			line-height: 24px
+	&-box,
+	&-icon
+		background-color: #848E9E
+	&-box
+		width: 269px
+		padding: 7px 7px 7px 20px
+		border-radius: 5px
+		.text
+			font-size: 12px
+			line-height: 19px
+	&-info
+		width: 222px
+		&__icon
+			height: 24px
+		.text
+			margin-left: 10px
+	&-socials
+		gap: 12px
+		margin-top: 22px
+		&__icon
+			width: 28px
+			height: 28px
+			border-radius: 50%
+	&-bottom
+		padding-top: 16px
+		padding-bottom: 19px
+		background-color: $green
+		.text
+			width: 666px
+			font-size: 10px
+			color: #A7A7A7
+			line-height: 10px
+
+// Components
+.button
+	gap: 4px
+	border-radius: 35px
+	background-color: $grey
+	cursor: pointer
+	&-text
+		color: $white
+
+.search
+	position: relative
+	width: 559px
+	&-icon
+		position: absolute
+		top: 50%
+		left: 11px
+		transform: translateY(-50%)
+	&-input
+		width: -webkit-fill-available
+		padding: 11px 30px
+		border: 1px solid $grey
+		border-radius: 33px
+		font-style: italic
+		font-size: 12px
+		color: #898989
+		line-height: 16px
+		&::placeholder
+			color: #898989
+
+.action
+	gap: 2px
+	&_list
+		gap: 24px
+	&-icon
+		width: 22px
+		height: 22px
+		border-radius: 50%
+		background-color: $grey
+	&-text
+		font-size: 10px
+		color: #626262
+
+.card
+	position: relative
+	width: 208px
+	height: 381px
+	border-radius: 5px
+	background-color: $white
+	overflow: hidden
+	&-galery
+		width: 100%
+		min-height: 208px
+		border-radius: 5px
+		background-color: #EDEDED
+		&__circle,
+		.image
+			position: absolute
+		&__circle
+			width: 104px
+			height: 104px
+			border-radius: 50%
+			background-color: #E6E6E6
+		.image
+			padding-top: 13px
+	&-like,
+	&-banner
+		position: absolute
+		z-index: 2
+	&-like
+		top: 7px
+		right: 8px
+		width: 34px
+		height: 34px
+		border-radius: 50%
+		.icon:last-child
+			display: none
+		&.active
+			background-color: #F7F7F7
+			.icon
+				&:first-child
+					display: none
+				&:last-child
+					display: block
+	&-banner
+		top: 8px
+		left: 0
+		height: max-content
+		&__info
+			position: absolute
+			top: 9px
+			left: 8px
+			gap: 8px
+			.text
+				font-size: 11px
+				color: $white
+	&-sale
+		position: absolute
+		top: 47%
+		right: 11.5px
+		width: 54px
+		height: 54px
+		border-radius: 50%
+		outline: 1px solid $white
+		background-color: $pink-light
+		color: $pink
+		.icon
+			position: absolute
+			top: 7.5px
+			right: 11.5px
+	&-box
+		width: 100%
+		height: 100%
+		margin: 11px 3px 4px
+		.description
+			font-size: 11px
+			color: #909090
+			line-height: 20px
+			-webkit-line-clamp: 1
+		.text
+			width: 170px
+			color: #3B3B3B
+			line-height: 19px
+			-webkit-line-clamp: 2
+		.title
+			margin: 12px 0 10px
+			color: $green-light
+		&__statistics
+			gap: 15px
+			.rating
+				gap: 3px
+			.reviews
+				gap: 5px
+		.button
+			position: absolute
+			bottom: 4px
+			left: 3px
+			right: 3px
+			height: 32px
+			border-radius: 15px 15px 5px 5px
+			background-color: $green-light
+			gap: 13px
+			&:hover
+				background-color: $green
+			&-text
+				font-size: 14px
+				line-height: 20.62px
+
+.carousel
+	overflow-x: scroll
+	overflow-y: hidden
+	cursor: grab
+	&::-webkit-scrollbar
+		display: none
+	&.active
+		cursor: grabbing
+		cursor: -webkit-grabbing
+	&-inner
+		display: flex
+		align-items: center
+		gap: 40px
+		transition: all .3s
