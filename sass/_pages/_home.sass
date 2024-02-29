@@ -13,16 +13,13 @@
 		border-radius: 20px
 		overflow: hidden
 		&-background,
-		.back,
-		.next,
 		&-content
 			position: absolute
 		.background
 			background: linear-gradient(to right, #00463650, #00463600)
 		.back,
 		.next
-			top: 50%
-			transform: translateY(-50%)
+			@include center
 		.back
 			left: 21px
 			transform: rotate(180deg)
@@ -44,8 +41,7 @@
 				font-size: 15px
 	.popular,
 	.plan,
-	.recomendations,
-	.partners
+	.recomendations
 		margin-top: 53px
 		&-wrap
 			margin-top: 31px
@@ -102,13 +98,11 @@
 						&::before,
 						&::after
 							@include hide
-							position: absolute
-							top: 50%
+							@include center
 							content: ""
 							width: 19px
 							height: 1px
 							background-color: $white
-							transform: translateY(-50%)
 						&::before
 							margin-left: -40px
 						&::after
@@ -177,5 +171,6 @@
 	.recomendations
 		&-wrap
 			gap: 25px 17px
-	.partners .carousel
-		height: 70px
+	.partners
+		margin-top: 53px
+		@include partners

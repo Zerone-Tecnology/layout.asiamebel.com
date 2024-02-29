@@ -4,6 +4,7 @@
 
 @import _modals
 @import _pages/home
+@import _pages/filter
 
 // General
 html
@@ -156,19 +157,9 @@ p
 					line-height: 23px
 					color: $grey-menu
 					&::before
+						@include dot
 						@include hide
-						position: absolute
-						top: 50%
-						left: 0
-						content: ""
-						display: inline-block
-						width: 5px
-						height: 5px
-						border-radius: 50%
-						-moz-border-radius: 50%
-						-webkit-border-radius: 50%
 						background-color: #4C4F5E
-						transform: translateY(-50%)
 					&:hover
 						position: relative
 						padding-left: 16px
@@ -194,18 +185,8 @@ p
 				line-height: 13px
 				text-transform: uppercase
 				&::before
-					position: absolute
-					top: 50%
-					left: 0
-					content: ""
-					display: inline-block
-					width: 6px
-					height: 6px
-					border-radius: 50%
-					-moz-border-radius: 50%
-					-webkit-border-radius: 50%
+					@include dot
 					background-color: $white
-					transform: translateY(-50%)
 			&-icon
 				width: 29px
 				height: 29px
@@ -301,10 +282,8 @@ p
 	position: relative
 	width: 559px
 	&-icon
-		position: absolute
-		top: 50%
+		@include center
 		left: 11px
-		transform: translateY(-50%)
 	.input
 		width: -webkit-fill-available
 		font-style: italic
