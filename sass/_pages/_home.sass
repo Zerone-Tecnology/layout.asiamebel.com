@@ -104,11 +104,13 @@
 						transition: all .3s ease-in-out
 						&::before,
 						&::after
+							@include hide
 							position: absolute
 							top: 50%
 							content: ""
 							width: 19px
 							height: 1px
+							background-color: $white
 							transform: translateY(-50%)
 						&::before
 							margin-left: -40px
@@ -121,7 +123,7 @@
 							margin: -3px 0 -2px
 							&::before,
 							&::after
-								background-color: $white
+								@include show
 	.plan
 		height: 432px
 		border-radius: 10px
