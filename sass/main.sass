@@ -7,6 +7,7 @@
 // General
 html
 	scroll-behavior: smooth
+	transition: all .3s ease-in-out
 body
 	display: block
 	width: 100%
@@ -14,7 +15,7 @@ body
 	background-color: #F5F5F5
 	font-style: normal
 *
-	transition: all .3s ease-in-out
+	box-sizing: border-box
 
 input,
 button
@@ -24,6 +25,8 @@ ul,
 button
 	margin: 0
 	padding: 0
+ul
+	list-style: none
 a
 	text-decoration: none
 h1, h2, h3, h4, h5, h6, p
@@ -111,7 +114,6 @@ p
 			height: 40px
 	&-bottom
 		&__menu
-			list-style: none
 			gap: 30px
 			.text
 				font-size: 13px
@@ -125,7 +127,6 @@ p
 			&-text
 				position: relative
 				padding-left: 10px
-				font-size: 13px
 				line-height: 13px
 				text-transform: uppercase
 				&::before
@@ -166,7 +167,6 @@ p
 				color: #4C4F5E
 		&__menu
 			gap: 2px
-			list-style: none
 			.text
 				line-height: 23px
 				color: $grey-menu
@@ -227,7 +227,7 @@ p
 		.text
 			width: 666px
 			font-size: 10px
-			color: #A7A7A7
+			color: $grey-light
 			line-height: 10px
 
 // Components
@@ -237,7 +237,43 @@ p
 	background-color: $grey
 	cursor: pointer
 	&-text
+		line-height: 21px
 		color: $white
+
+.input
+	height: 40px
+	padding: 11px 30px
+	border: 1px solid $grey
+	border-radius: 33px
+	font-size: 20px
+	color: #898989
+	line-height: 16px
+	&::placeholder
+		color: #898989
+
+.checkbox
+	cursor: pointer
+	-moz-appearance: none
+	-webkit-appearance: none
+	-o-appearance: none
+	margin: 0
+	outline: none
+	content: none
+	&::before
+		content: "✔"
+		display: flex
+		align-items: center
+		justify-content: center
+		width: 21px
+		height: 21px
+		border: 1px solid $white
+		border-radius: 5px
+		font-size: 15px
+		color: transparent !important
+		box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, .17)
+	&:checked::before
+		color: black !important
+		margin: auto
 
 .search
 	position: relative
@@ -247,17 +283,10 @@ p
 		top: 50%
 		left: 11px
 		transform: translateY(-50%)
-	&-input
+	.input
 		width: -webkit-fill-available
-		padding: 11px 30px
-		border: 1px solid $grey
-		border-radius: 33px
 		font-style: italic
 		font-size: 12px
-		color: #898989
-		line-height: 16px
-		&::placeholder
-			color: #898989
 
 .action
 	gap: 2px
@@ -279,25 +308,32 @@ p
 	border-radius: 5px
 	background-color: $white
 	overflow: hidden
+	&:hover .circle
+		width: 146px
+		height: 146px
+		background-color: $orange
 	&-galery
 		width: 100%
 		min-height: 208px
 		border-radius: 5px
 		background-color: #EDEDED
-		&__circle,
+		.circle,
 		.image
 			position: absolute
-		&__circle
+		.circle
 			width: 104px
 			height: 104px
 			border-radius: 50%
 			background-color: #E6E6E6
+			transition: all .3s ease-in-out
 		.image
 			padding-top: 13px
 	&-like,
 	&-banner
 		position: absolute
-		z-index: 2
+	&-like,
+	.button
+		transition: all .3s ease-in-out
 	&-like
 		top: 7px
 		right: 8px
@@ -375,7 +411,6 @@ p
 				background-color: $green
 			&-text
 				font-size: 14px
-				line-height: 20.62px
 
 .carousel
 	overflow-x: scroll

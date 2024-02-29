@@ -78,18 +78,50 @@
 					background: #00463661
 				.content
 					top: 34px
+			.background,
+			.content
+				transition: all .3s ease-in-out
 			.background
 				background: linear-gradient(to top, #69717450, #69717400)
 			.content
 				position: absolute
-				left: 50%
 				top: calc(100% - 32px)
-				transform: translateX(-50%)
+				width: 100%
+				.title,
 				.text
-					font-weight: 400
-					line-height: 20px
 					color: $white
 					text-wrap: nowrap
+					text-align: center
+				.title
+					font-weight: 400
+					line-height: 16px
+				&-menu
+					gap: 12px
+					margin-top: 70px
+					.text
+						position: relative
+						font-size: 14px
+						transition: all .3s ease-in-out
+						&::before,
+						&::after
+							position: absolute
+							top: 50%
+							content: ""
+							width: 19px
+							height: 1px
+							transform: translateY(-50%)
+						&::before
+							margin-left: -40px
+						&::after
+							margin-left: 21px
+						&:hover
+							font-size: 15px
+							text-transform: uppercase
+							line-height: 21px
+							margin: -3px 0 -2px
+							&::before,
+							&::after
+								background-color: $white
 	.plan
 		height: 432px
 		border-radius: 10px
@@ -108,13 +140,13 @@
 				outline: 1px solid $white
 				&-text
 					font-size: 18px
-					line-height: 21px
 		&-list
 			position: absolute
 			top: 40%
 			left: 72%
 			gap: 7px
 			transform: translate(-40%, -72%)
+			list-style: disc
 			li::marker,
 			.text
 				color: $grey
