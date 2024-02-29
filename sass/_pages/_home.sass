@@ -48,19 +48,13 @@
 	.popular
 		&-wrap
 			gap: 19px 17px
-	.interier
+	.question
+		@include question
 		margin-top: 35px
+	.interier
 		&-wrap
 			gap: 4px
 			margin-top: 39px
-		&-header
-			padding: 30px 37px 31px
-			border-radius: 10px
-			background-color: #969EAB
-			.title
-				font-weight: 300
-				color: $white
-				text-transform: uppercase
 		&-box
 			position: relative
 			width: 367px
@@ -172,5 +166,5 @@
 		&-wrap
 			gap: 25px 17px
 	.partners
-		margin-top: 53px
 		@include partners
+		margin-top: 53px
