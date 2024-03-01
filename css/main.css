@@ -494,7 +494,7 @@ p {
   gap: 5px;
 }
 .header-middle {
-  padding: 16px 0 15px;
+  padding: 16px 0;
 }
 .header-middle .button {
   width: 100px;
@@ -598,9 +598,10 @@ p {
 .header-bottom .button {
   width: 190px;
   height: 33px;
+  margin-bottom: 1px;
+  padding: 2px 2px 2px 6px;
   border-radius: 16.5px;
   background-color: #DEA9A9;
-  padding: 2px 2px 2px 6px;
 }
 .header-bottom .button-text {
   position: relative;
