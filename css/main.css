@@ -309,6 +309,12 @@
   margin-top: 31px;
 }
 
+.filter .content {
+  margin-top: 30px;
+}
+.filter .content-wrap {
+  margin-top: 32px;
+}
 .filter .content-filter {
   width: 209px;
 }
