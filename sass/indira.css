@@ -1,1 +1,8 @@
-/*# sourceMappingURL=indira.css.map */
+.info p {
+  font-size: 13px;
+  color: #474747;
+}
+.info p:last-child {
+  font-size: 15p;
+  text-align: right;
+}/*# sourceMappingURL=indira.css.map */
