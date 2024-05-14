@@ -11,11 +11,12 @@
 	<link rel="manifest" href="assets/favicons/site.webmanifest">
 	<meta name="msapplication-TileColor" content="#DA532C">
 	<meta name="theme-color" content="#FFF">
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/11.0.3/nouislider.min.css">
 	<link rel="stylesheet" href="sass/indira.css">
 	<!-- <link rel="stylesheet" href="css/main.css"> -->
 	<link rel="stylesheet" href="sass/indira.sass">
-	<script src="js/common.js"></script>
+	
+	
 </head>
 <body>
 	<!-- HEADER -->
@@ -193,13 +194,41 @@
 								<h3>Адрес и способ доставки</h3>
 							</div>
 							<div class="forms">
-								<select required>
+								<select id="actSelect" class="Validate_Required " name="actSelect" aria-required="true" onChange="Selected(this)">
 									<option value="" hidden>Способ оплаты</option>
 									<!-- normal options -->
 									<option value="1">Самомывоз</option>
 									<option value="2">Курьер</option>
 								</select>
 							</div>
+
+							<div class="block" id='Block1'>
+								<div class="additionally">
+									<div class="forms">
+										<select required>
+											<option value="" hidden>Алматы</option>
+											<!-- normal options -->
+											<option value="1">Город</option>
+											<option value="2">Город</option>
+										</select>
+									</div>
+									<div class="forms">
+										<select required>
+											<option value="" hidden>Населеный пункт</option>
+											<!-- normal options -->
+											<option value="1">Населеный пункт</option>
+											<option value="2">Населеный пункт</option>
+										</select>
+									</div>
+								</div>
+								<div class="additionally">
+									<div class="forms">
+										<form action="">
+											<input type="text" placeholder="Адрес">
+									</div>
+								</div>
+							</div>
+
 						</div>
 						<div class="element">
 							<div class="heading">
@@ -262,79 +291,7 @@
 					<button>Заказать</button>
 				</div>
 				
-				<section class="popular">
-					<h2>Хиты продаж</h2>
-					<div class="popular-wrap wrap">
-						<div id="card-1" class="card">
-							<a href="#" class="card-galery center">
-								<div class="circle"></div>
-								<img src="assets/images/catalog/item1.png" alt="Item 1" class="image" />
-							</a>
-	
-							<div class="card-like center btn" onclick="handleLike('card-1')">
-								<img src="assets/icons/favourite/default.svg" alt="Favourite" class="icon" />
-								<img src="assets/icons/favourite/active.svg" alt="Favourite" class="icon" />
-							</div>
-	
-							<div class="card-banner">
-								<img src="assets/images/flags/feijoa.png" alt="Banner" />
-								<div class="card-banner__info horizontal inline">
-									<img src="assets/icons/fire.svg" alt="Fire" />
-									<p class="text">новинка</p>
-								</div>
-							</div>
-							<!-- <div class="card-banner">
-								<img src="assets/images/flags/wisteria.png" alt="Banner" />
-								<div class="card-banner__info horizontal inline">
-									<img src="assets/icons/clock.svg" alt="Clock" />
-									<p class="text">Только сегодня</p>
-								</div>
-							</div> -->
-							<!-- <div class="card-banner">
-								<img src="assets/images/flags/geraldine.png" alt="Banner" />
-								<div class="card-banner__info horizontal inline">
-									<img src="assets/icons/percentage.svg" alt="Percentage" />
-									<p class="text">можно в рассрочку</p>
-								</div>
-							</div> -->
-							<!-- <div class="card-banner">
-								<img src="assets/images/flags/geraldine.png" alt="Banner" />
-								<div class="card-banner__info horizontal inline">
-									<img src="assets/icons/percentage.svg" alt="Percentage" />
-									<p class="text">можно в кредит</p>
-								</div>
-							</div> -->
-	
-							<div class="card-sale center">
-								<img src="assets/icons/sale/pink.svg" alt="Sale" class="icon" />
-								<h6>SALE</h6>
-							</div>
-	
-							<div class="card-box">
-								<p class="description bigtext">Мебельные дверцы</p>
-								<a href="#">
-									<p class="text bigtext">Замок мебельный врезной 39x40 мм, Китай EMS</p>
-								</a>
-								<h5 class="title">1 410 тг.</h5>
-	
-								<div class="card-box__statistics horizontal">
-									<div class="rating horizontal inline">
-										<img src="assets/icons/star.svg" alt="Rating" />
-										<p>4,8</p>
-									</div>
-									<div class="reviews horizontal inline">
-										<img src="assets/icons/review.svg" alt="Reviews" />
-										<p>102 отзывов</p>
-									</div>
-								</div>
-	
-								<button class="button center">
-									<img src="assets/icons/basket.svg" alt="Basket" />
-									<p class="button-text">В корзину</p>
-								</button>
-							</div>
-						</div>
-
+				
 			</div>
 		</div>
 	</div>
@@ -488,5 +445,8 @@
 			</div>
 		</div>
 	</footer>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/11.0.3/nouislider.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wnumb/1.1.0/wNumb.min.js"></script>
+	<script src="js/indira.js"></script>
 </body>
 </html>

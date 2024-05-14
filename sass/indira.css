@@ -449,156 +449,16 @@ li {
   margin-left: 620px;
 }
 
-.card {
-  position: relative;
-  width: 208px;
-  height: 381px;
-  border-radius: 5px;
-  background-color: #FFF;
-  overflow: hidden;
-}
-.card:hover .circle {
-  width: 146px;
-  height: 146px;
-  background-color: #FEE3B1;
-}
-
-.card-galery {
-  width: 100%;
-  min-height: 208px;
-  border-radius: 5px;
-  background-color: #EDEDED;
-}
-
-.card-galery .circle,
-.card-galery .image {
-  position: absolute;
-}
-
-.card-galery .circle {
-  width: 104px;
-  height: 104px;
-  border-radius: 50%;
-  background-color: #E6E6E6;
-  transition: all 0.3s ease-in-out;
-}
-.card-galery .image {
-  padding-top: 13px;
-}
-
-.card-like, .card-banner {
-  position: absolute;
-}
-
-.card-like .button,
-.card .button {
-  transition: all 0.3s ease-in-out;
-}
-
-.card-like {
-  top: 7px;
-  right: 8px;
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-}
-
-.card-like .icon:last-child {
+.block {
   display: none;
 }
-.card-like .active {
-  background-color: #F7F7F7;
-}
-.card-like .active .icon:first-child {
-  display: none;
-}
-.card-like .active .icon:last-child {
-  display: block;
-}
-
-.card-banner {
-  top: 8px;
-  left: 0;
-  height: -moz-max-content;
-  height: max-content;
-}
-
-.card-banner__info {
-  position: absolute;
-  top: 9px;
-  left: 8px;
-  gap: 8px;
-}
-.card-banner__info .text {
-  font-size: 11px;
-  color: #FFF;
-}
-
-.card-sale {
-  position: absolute;
-  top: 47%;
-  right: 11.5px;
-  width: 54px;
-  height: 54px;
-  border-radius: 50%;
-  outline: 1px solid #FFF;
-  background-color: #FFE0E0;
-  color: #DEA9A9;
-}
-.card-sale .icon {
-  position: absolute;
-  top: 7.5px;
-  right: 11.5px;
-}
-
-.card-box {
-  margin: 11px 3px 4px;
-}
-.card-box .description {
-  font-size: 11px;
-  color: #909090;
-  line-height: 20px;
-  -webkit-line-clamp: 1;
-}
-.card-box .text {
-  width: 170px;
-  color: #3B3B3B;
-  line-height: 19px;
-  -webkit-line-clamp: 2;
-}
-.card-box .title {
-  margin: 12px 0 10px;
-  color: #4D897B;
-}
-.card-box .button {
-  position: absolute;
-  bottom: 4px;
-  left: 3px;
-  right: 3px;
-  height: 32px;
-  border-radius: 15px 15px 5px 5px;
-  background-color: #4D897B;
-  gap: 13px;
-}
-.card-box .button:hover {
-  background-color: #004636;
-}
-.card-box .button-text {
-  font-size: 14px;
-}
-
-.card-box__statistics {
-  gap: 15px;
-}
-.card-box__statistics .rating {
-  gap: 3px;
-}
-.card-box__statistics .reviews {
-  gap: 5px;
-}
-
-.wrap {
-  flex-wrap: wrap;
+.block .additionally {
   display: flex;
-  justify-content: space-evenly;
+}
+.block .additionally .forms {
+  margin-right: 10px;
+}
+.block .additionally .forms input {
+  width: 637px;
+  height: 40px;
 }/*# sourceMappingURL=indira.css.map */
