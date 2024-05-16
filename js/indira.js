@@ -1,3 +1,11 @@
+$('#btn-details').on('click', function(){
+    $('#popupDetail').addClass('active');
+})
+$('.btn-popup-close').on('click', function(){
+    $('#popupDetail').removeClass('active');
+})
+
+
 function Selected(a) {
     var label = a.value;
     if (label == 1) {
