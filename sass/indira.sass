@@ -11,6 +11,8 @@ body
     margin: 0 auto
     font-style: normal
 
+
+
 * 
   box-sizing: border-box
 
@@ -324,58 +326,80 @@ li
 
 .title
     font-weight: 400
+    margin-top: 39px
 
 .sec
-    margin-left: 340px
-    display: flex
+    margin: 50px 0
+    
+    .sec-right
+        position: relative
+        left: 8%
 
-    .line
-        .vector
-            background-color: #959EAD
-            width: 34px
-            height: 34px
-            border-radius: 50%
-            margin: 21px 0 0 -16px
-            position: absolute
-            padding: 6px 0px 6px 8px
+        .line
+            .vector
+                position: absolute
+                top: 45px
 
-        .vl-line
-            border-left: 1px solid #959EAD
-            height: 341px
-            margin-right: 46px
-            margin-top: 55px
+            .vl-line
+                position: absolute
+                border-left: 1px solid #959EAD
+                height: 75.3%
+                top: 75px
+                left: 1.3%
+
+            .vector1
+                position: absolute
+                top: 174.3px
+                left: 9px
+
+            .vector2
+                position: absolute
+                top: 92%
+                left: 9px
+
+    .details
+        position: relative
+        left: 48px
+
+        .forms
+
+            select
+                width: 310px
+                height: 40px
+                font-size: 13px
+                color: #3B3B3B
+                border-radius: 33px
+                padding-left: 15px
+                margin-top: 15px
+                // cursor: pointer
+                -webkit-appearance: none
+
+            select.Validate_Required, select.city, select.locality, select.payment
+                background-image: linear-gradient(45deg, transparent 50%, #959EAD 50%), linear-gradient(135deg, #959EAD 50%, transparent 50%), radial-gradient(#F2F1EF 70%, transparent 72%)
+                background-position: calc(99.5% - 20px) calc(1em + 4px), calc(99.5% - 15px) calc(1em + 4px), calc(98% - 0.5em) 0.7em
+                background-size: 5px 5px, 5px 5px, 1.5em 1.5em
+                background-repeat: no-repeat
+
+            
 
 
-    .forms
-
-        select
-            width: 310px
-            height: 40px
-            font-size: 13px
-            color: #3B3B3B
-            border-radius: 33px
-            padding-left: 15px
-            margin-top: 15px
-            margin-bottom: 39px
-
-        input
-            width: 310px
-            height: 40px
-            font-size: 13px
-            color: #3B3B3B
-            border-radius: 33px
-            padding-left: 15px
-            margin-top: 15px
-            margin-bottom: 39px
+            input
+                width: 310px
+                height: 40px
+                font-size: 13px
+                border: 1px solid #3B3B3B
+                border-radius: 33px
+                padding-left: 15px
+                margin-top: 15px
     
 .sec2
-    width: 920px
-    height: auto
     background-color: white
     border-radius: 5px
     padding: 27px 64px 13px 65px
     margin-bottom: 28px
-    margin-left: 340px
+    position: relative
+    margin-left: 7%
+    margin-right: 7%
 
     .forms
 
@@ -383,7 +407,7 @@ li
             width: 310px
             height: 40px
             font-size: 13px
-            color: #3B3B3B
+            border: 1px solid #3B3B3B
             border-radius: 33px
             padding-left: 15px
             margin-top: 15px
@@ -421,16 +445,15 @@ li
 
 .order 
     button
-        width: 332px
-        height: 46px
         background-color: #4D897B
         border-radius: 30px
         border: none
         font-size: 15px
-        text-align: center
+        padding: 14px 120px 14px 120px
         color: #FFFFFF
         margin-bottom: 50px
-        margin-left: 620px
+        position: relative
+        left: 40%
     
 .block
     display: none
@@ -471,8 +494,7 @@ li
             margin-bottom: 11px
 
 .right
-    max-width: 350px
-    height: 350px
+    max-width: 85%
     background-color: #FFFFFF
     padding-top: 15px
     padding-bottom: 6px
@@ -588,12 +610,10 @@ li
             margin: 0 0
             margin-left: 5px
 .knob
-    width: 332px
-    height: 46px
     background-color: #4D897B
     border-radius: 30px 30px 5px 5px
     margin: 13px 5px 0px 13px
-    padding-top: 13px
+    padding: 13px 107px
     text-align: center
 
     img
@@ -676,8 +696,7 @@ li
     display: flex
 
     .details
-        width: 168px
-        height: 46px
+        width: 41%
         background-color: #959EAD
         margin: 5px 5px
         border-radius: 30px
@@ -685,6 +704,7 @@ li
         align-items: center
         justify-content: center
         margin-top: 68px
+        padding: 11px 29px
         
         img
             width: 24px
@@ -697,14 +717,202 @@ li
             text-decoration: none
 
 #popupDetail
+    width: 100%
+    height: 100%
     position: fixed
-    top: 20%
-    width: 50%
     left: 0
-    right: 0
-    background-color: #fff
-    margin: 0 auto
-    min-height: 500px
+    top: 0
+    background-color: rgba(0, 70, 54, 35%)
+    z-index: 2
     display: none
+    overflow-y: scroll
     &.active
         display: block
+
+    .popup-tender-container
+        display: flex
+        flex-direction: column
+        width: 100%
+        height: 100%
+        
+
+        .popupDetail-body
+            margin: auto
+            width: 58%
+            max-height: 90%
+            background-color: #F2F1EF
+            position: relative
+            padding: 45px 49px
+            overflow-y: auto
+            // min-height:300px
+            // height:300px
+                
+            
+
+            .title
+                font-size: 20px
+                color: #474747
+                margin-top: 0
+
+            .more-details
+
+                .name-description
+                    font-size: 15px
+                    color: #3B3B3B
+                    margin-top: 27px
+
+                .description
+                    p
+                        font-size: 13px
+                        color: #3B3B3B
+
+                .next-description
+                    display: flex
+                    flex-direction: row
+                    margin-top: 19px
+
+                    .content
+                        display: flex
+                        flex-direction: column
+                        margin-right: 14px
+
+                        .scheme
+                            width: 100%
+                            border: 1px solid #959EAD
+                            
+
+                            img
+                                width: 230px
+                                height: 188px
+                                margin: 35px 13px 25px 23px    
+
+                        p
+                            font-size: 12px
+                            color: #3B3B3B
+                            margin-top: 17px 
+            
+
+        .btn-popup-close
+            position: absolute
+            top: 15px
+            right: 15px
+            font-size: 21px
+            cursor: pointer
+
+::-webkit-scrollbar
+    width: 17px
+::-webkit-scrollbar-track
+    background: #E0E0E0
+::-webkit-scrollbar-thumb
+    height: 126px
+    background: #FFFFFF
+    border: none
+
+#popupReviews
+    width: 100%
+    height: 100%
+    position: fixed
+    left: 0
+    top: 0
+    background-color: rgba(0, 70, 54, 35%)
+    z-index: 2
+    display: none
+    overflow-y: scroll
+    &.active
+        display: block
+
+        .popup-tender-container
+            display: flex
+            flex-direction: column
+            width: 100%
+            height: 100%
+        
+
+            .popupDetail-body
+                margin: auto
+                width: 58%
+                max-height: 90%
+                background-color: #F2F1EF
+                position: relative
+                padding: 45px 49px
+                overflow-y: auto
+
+                .general-review
+                    display: flex
+                    flex-direction: row
+
+                    .name-description
+                        display: flex
+                        flex-direction: row
+                        margin-right: 8.5px
+
+                        img
+                            width: 20px
+                            height: 20px
+                            margin-right: 5px
+                        
+
+                .title
+                    margin-top: 0px
+
+                .detailed-block
+                    background-color: #FFFFFF
+                    padding: 18px 19px
+                    margin-bottom: 25px
+
+                    .top
+                        display: flex
+                        flex-direction: row
+                        justify-content: space-between
+                        .profile
+                            display: flex
+                            flex-direction: row
+
+                            .login
+                                margin: 20px 20px
+                                p
+                                    font-size: 15px
+                                    color: #3B3B3B
+                                    margin-bottom: 7px
+                                    &:last-child
+                                        font-size: 13px
+                                        color: #747474
+
+                    .center
+                        font-size: 13px
+                        color: #3B3B3B
+                        margin-top: 13px
+
+                    .bottom
+                        display: flex
+                        flex-direction: row
+                        .photo-review
+                            width: 89px
+                            height: 89px
+                            border-radius: 5px
+                            border: 1px solid #959EAD
+                            background-color: #F2F1EF
+                            padding: 15px 18px
+                            margin-right: 7px
+                            img
+                                width: 52px
+                                height: 52px
+
+                    .additional-offer
+                            margin-top: 3px
+                            text-align: right
+                            a
+                                color: #3B3B3B
+                                font-size: 12px
+
+                                        
+
+
+                .btn-popup-close
+                    position: absolute
+                    top: 15px
+                    right: 15px
+                    font-size: 21px
+                    cursor: pointer
+
+    

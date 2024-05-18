@@ -185,83 +185,88 @@
 					<h2>Оформление заказа</h2>
 				</div>
 				<div class="sec">
-					<div class="line">
-						<div class="vector"><img src="assets/images/Vector.png" alt="Phone Numb." /></div>
-						<div class="vl-line"></div>
-					</div>
+					
 					<div class="sec-right">
-						<div class="element">
-							<div class="title">
-								<h3>Адрес и способ доставки</h3>
-							</div>
-							<div class="forms">
-								<select id="actSelect" class="Validate_Required " name="actSelect" aria-required="true" onChange="Selected(this)">
-									<option value="" hidden>Способ оплаты</option>
-									<!-- normal options -->
-									<option value="1">Самомывоз</option>
-									<option value="2">Курьер</option>
-								</select>
-							</div>
+						<div class="line">
+							<div class="vector"><img src="assets/images/addresss.png" alt="address" /></div>
+							<div class="vl-line"></div>
+							<div class="vector1"><img src="assets/icons/dot.svg" alt="dot." /></div>
+							<div class="vector2"><img src="assets/icons/dot.svg" alt="dot." /></div>
+						</div>
+						<div class="details">
+							<div class="element">
+								<div class="title">
+									<h3>Адрес и способ доставки</h3>
+								</div>
+								<div class="forms">
+									<select id="actSelect" class="Validate_Required " name="actSelect" aria-required="true" onChange="Selected(this)">
+										<option value="" hidden>Способ оплаты</option>
+										<!-- normal options -->
+										<option value="1">Самомывоз</option>
+										<option value="2">Курьер</option>
+									</select>
+								</div>
 
-							<div class="block" id='Block1'>
-								<div class="additionally">
-									<div class="forms">
-										<select required>
-											<option value="" hidden>Алматы</option>
-											<!-- normal options -->
-											<option value="1">Город</option>
-											<option value="2">Город</option>
-										</select>
+								<div class="block" id='Block1'>
+									<div class="additionally">
+										<div class="forms">
+											<select class="city">
+												<option value="" hidden>Алматы</option>
+												<!-- normal options -->
+												<option value="1">Город</option>
+												<option value="2">Город</option>
+											</select>
+										</div>
+										<div class="forms">
+											<select class="locality">
+												<option value="" hidden>Населеный пункт</option>
+												<!-- normal options -->
+												<option value="1">Населеный пункт</option>
+												<option value="2">Населеный пункт</option>
+											</select>
+										</div>
 									</div>
-									<div class="forms">
-										<select required>
-											<option value="" hidden>Населеный пункт</option>
-											<!-- normal options -->
-											<option value="1">Населеный пункт</option>
-											<option value="2">Населеный пункт</option>
-										</select>
+									<div class="additionally">
+										<div class="forms">
+											<form action="">
+												<input type="text" placeholder="Адрес">
+										</div>
 									</div>
 								</div>
-								<div class="additionally">
-									<div class="forms">
-										<form action="">
-											<input type="text" placeholder="Адрес">
-									</div>
+
+							</div>
+							<div class="element">
+								<div class="title">
+									<h3>Получатель</h3>
+								</div>
+								<div class="forms">
+									<form action="">
+										<input type="text" placeholder="Имя">
+										<input type="text" placeholder="Конт. номер">
+									</form>
 								</div>
 							</div>
-
-						</div>
-						<div class="element">
-							<div class="heading">
-								<h3>Получатель</h3>
-							</div>
-							<div class="forms">
-								<form action="">
-									<input type="text" placeholder="Имя">
-									<input type="text" placeholder="Конт. номер">
-								</form>
-							</div>
-						</div>
-						<div class="element">
-							<div class="heading">
-								<h3>Оплата</h3>
-							</div>
-							<div class="forms">
-								<select required>
-									<option value="" hidden>Способ оплаты</option>
-									<!-- normal options -->
-									<option value="1">QR</option>
-									<option value="2">Kaspi</option>
-									<option value="3">Halyk</option>
-									<option value="4">Нал</option>
-								</select>
+							<div class="element">
+								<div class="title">
+									<h3>Оплата</h3>
+								</div>
+								<div class="forms">
+									<select class="payment">
+										<option value="" hidden>Способ оплаты</option>
+										<!-- normal options -->
+										<option value="1">QR</option>
+										<option value="2">Kaspi</option>
+										<option value="3">Halyk</option>
+										<option value="4">Нал</option>
+									</select>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 
 					<div class="sec2">
-						<div class="heading">
+						<div class="title">
 							<h3>Сумма заказа</h3>
 						</div>
 						<div class="forms">
