@@ -1034,6 +1034,7 @@ li {
   font-size: 16px;
   color: #6E6E6E;
   margin-right: 10px;
+  margin-bottom: 0;
 }
 .section-contant .second_div .select .panel {
   width: 99%;
@@ -1073,10 +1074,12 @@ li {
   margin-right: 24px;
   font-size: 12px;
   color: #6E6E6E;
+  margin-bottom: 5px;
 }
 .section-contant .second_div .select .panel .estimate p {
   font-size: 12px;
   color: #6E6E6E;
+  margin-bottom: 5px;
 }
 .section-contant .second_div .select .panel .information {
   display: flex;
