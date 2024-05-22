@@ -1147,4 +1147,77 @@ li {
 
 .Block2 {
   display: none;
+}
+
+.logo img {
+  width: 25%;
+  margin-top: 59px;
+  margin-bottom: 42px;
+}
+
+.text {
+  font-size: 14px;
+  color: #3B3B3B;
+  width: 43%;
+}
+
+.gallery {
+  margin-bottom: 55px;
+}
+.gallery .top img {
+  width: 100%;
+  margin-bottom: 25px;
+}
+.gallery .bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.gallery .bottom img {
+  width: 32%;
+  height: 235px;
+}
+
+.line {
+  width: 100%;
+  border: 1px solid #6C6C6C;
+}
+
+.explanation .element {
+  margin-top: 30px;
+  margin-bottom: 29px;
+}
+.explanation .element .title {
+  font-size: 21px;
+  color: #004636;
+}
+.explanation .element .text {
+  font-size: 14px;
+  color: #3B3B3B;
+  margin-top: 15px;
+}
+.explanation .element .bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.explanation .element .bottom img {
+  width: 32%;
+  height: 235px;
+}
+.explanation .element .img {
+  display: flex;
+  justify-content: center;
+}
+.explanation .element .img img {
+  width: 100%;
+  margin-top: 23px;
+}
+
+.partners {
+  margin-top: 204px;
+}
+.partners .gallery {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
 }/*# sourceMappingURL=indira.css.map */
