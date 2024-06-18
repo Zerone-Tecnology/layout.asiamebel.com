@@ -1160,10 +1160,38 @@ li {
   margin-bottom: 42px;
 }
 
-.text {
+.text-sec {
   font-size: 14px;
   color: #3B3B3B;
   width: 43%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 21px;
+}
+.text-sec .element {
+  width: 80%;
+  background-color: #4D897B;
+  border-radius: 20px;
+  text-align: center;
+  padding: 5px;
+}
+.text-sec .element p {
+  font-size: 69px;
+  color: #FFFFFF;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+.text-sec .element p:last-child {
+  font-size: 14px;
+  margin-top: 0;
+  position: relative;
+  bottom: 9px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.text-sec .element-sec {
+  margin-left: 26px;
 }
 
 .gallery {
@@ -1186,36 +1214,52 @@ li {
 .line {
   width: 100%;
   border: 1px solid #6C6C6C;
+  margin-bottom: 30px;
 }
 
-.explanation .element {
-  margin-top: 30px;
-  margin-bottom: 29px;
-}
-.explanation .element .title {
-  font-size: 21px;
-  color: #004636;
-}
-.explanation .element .text {
-  font-size: 14px;
-  color: #3B3B3B;
-  margin-top: 15px;
-}
-.explanation .element .bottom {
-  display: flex;
-  justify-content: space-between;
-}
-.explanation .element .bottom img {
-  width: 32%;
-  height: 235px;
-}
-.explanation .element .img {
+.explanation .img {
   display: flex;
   justify-content: center;
 }
-.explanation .element .img img {
+.explanation .img img {
   width: 100%;
   margin-top: 23px;
+}
+.explanation .description {
+  display: flex;
+  margin-top: 107px;
+  justify-content: space-around;
+}
+.explanation .description .left {
+  width: 30%;
+  height: 465px;
+  background-color: #4D897B;
+  border-radius: 20px;
+  padding: 89px 35px 47px 35px;
+}
+.explanation .description .left img {
+  margin-left: 5%;
+}
+.explanation .description .left .title {
+  color: #FFFFFF;
+}
+.explanation .description .left .title h3 {
+  font-size: 25px;
+}
+.explanation .description .left p {
+  width: 70%;
+  font-size: 14px;
+  color: #FFFFFF;
+  margin-top: 20px;
+}
+.explanation .description .center {
+  background-color: #004636;
+}
+.explanation .description .right {
+  background-color: #959EAD;
+}
+.explanation .description .right p {
+  color: #3B3B3B;
 }
 
 .partners {
