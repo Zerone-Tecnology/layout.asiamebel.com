@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>АЗИЯ МЕБЕЛЬ</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<link rel="manifest" href="assets/favicons/site.webmanifest">
+	<meta name="msapplication-TileColor" content="#DA532C">
+	<meta name="theme-color" content="#FFF">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/11.0.3/nouislider.min.css">
+	<link rel="stylesheet" href="sass/indira.css">
+	<!-- <link rel="stylesheet" href="css/main.css"> -->
+	<link rel="stylesheet" href="sass/indira.sass">
+	
+	
+</head>
+<body>
+	<!-- HEADER -->
+	<header class="header">
+		<div class="header-top">
+			<div class="box horizontal space">
+				<div class="header-top__line horizontal">
+					<a href="#">
+						<p class="text">О компании</p>
+					</a>
+					<a href="#">
+						<p class="text">Как купить</p>
+					</a>
+					<a href="#">
+						<p class="text">Контакты</p>
+					</a>
+				</div>
+				
+				<div class="header-top__line horizontal">
+					<a href="#">
+						<p id="language" class="text">КЗ</p>
+					</a>
+					<a href="#">
+						<p class="text">Алматы</p>
+					</a>
+					<a href="tel:+77010276354" class="horizontal inline">
+						<img src="assets/icons/phone.svg" alt="Phone" />
+						<p class="text">+7 (701) 027 63 54</p>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="header-middle">
+			<div class="box horizontal inline space">
+				<a href="/">
+					<img src="assets/icons/logo.svg" alt="Азия Мебель" />
+				</a>
+
+				<button class="button center">
+					<img src="assets/icons/cube.svg" alt="Box" />
+					<p class="button-text">Комнаты</p>
+				</button>
+
+				<form action="" class="search">
+					<img src="assets/icons/search.svg" alt="Search" class="search-icon btn" />
+					<input type="text" placeholder="Что найти на сайте?" class="input" />
+				</form>
+
+				<div class="action_list horizontal">
+					<div class="action vertical inline">
+						<a href="#" class="action-icon center" onclick="handleModal('auth')">
+							<img src="assets/icons/user.svg" alt="Войти" />
+						</a>
+						<p class="action-text">Войти</p>
+					</div>
+
+					<div class="action vertical inline">
+						<a href="#" class="action-icon center">
+							<img src="assets/icons/basket.svg" alt="Корзина" />
+						</a>
+						<p class="action-text">Корзина</p>
+					</div>
+
+					<div class="action vertical inline">
+						<a href="#" class="action-icon center">
+							<img src="assets/icons/heart.svg" alt="Избранное" />
+						</a>
+						<p class="action-text">Избранное</p>
+					</div>
+
+					<div class="action vertical inline">
+						<a href="#" class="action-icon center">
+							<img src="assets/icons/map_pin.svg" alt="Адреса" />
+						</a>
+						<p class="action-text">Адреса</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="header-bottom">
+			<div class="box horizontal end space">
+				<ul class="header-bottom__menu horizontal">
+					<li class="btn vertical inline">
+						<img src="assets/icons/fasteners/small.svg" alt="Направляющие" class="icon" />
+						<p class="text">Направляющие</p>
+					</li>
+					<li class="btn vertical inline">
+						<img src="assets/icons/fasteners/small.svg" alt="Петли и доводчики" class="icon" />
+						<p class="text">Петли и доводчики</p>
+					</li>
+					<li class="btn vertical inline">
+						<img src="assets/icons/fasteners/small.svg" alt="Крепежи" class="icon" />
+						<p class="text">Крепежи</p>
+					</li>
+					<li class="btn vertical inline">
+						<img src="assets/icons/fasteners/small.svg" alt="Система Джокер" class="icon" />
+						<p class="text">Система Джокер</p>
+					</li>
+					<li class="btn vertical inline">
+						<img src="assets/icons/fasteners/small.svg" alt="Ножки и опоры" class="icon" />
+						<p class="text">Ножки и опоры</p>
+					</li>
+					<li class="btn vertical inline">
+						<img src="assets/icons/fasteners/small.svg" alt="Системы петель" class="icon" />
+						<p class="text">Системы петель</p>
+					</li>
+					<li class="btn vertical inline">
+						<img src="assets/icons/fasteners/small.svg" alt="ЛДСП" class="icon" />
+						<p class="text">ЛДСП</p>
+					</li>
+				</ul>
+
+				<div class="dropdown">
+					<div class="dropdown-wrap box horizontal inline space">
+						<div class="vertical">
+							<h2 class="title">Крепежи</h2>
+							<h4 class="subtitle">Крепёжная и стяжная</h4>
+							<ul class="dropdown-menu vertical">
+								<li><a href="#">
+									<p class="text">Конфирмат</p>
+								</a></li>
+								<li><a href="#">
+									<p class="text">Шканты</p>
+								</a></li>
+								<li><a href="#">
+									<p class="text">Колёсики</p>
+								</a></li>
+								<li><a href="#">
+									<p class="text">Ножки</p>
+								</a></li>
+								<li><a href="#">
+									<p class="text">Петли</p>
+								</a></li>
+								<li><a href="#">
+									<p class="text">Евровинт</p>
+								</a></li>
+								<li><a href="#">
+									<p class="text">Саморезы и шурупы</p>
+								</a></li>
+							</ul>
+						</div>
+
+						<div class="dropdown-image center">
+							<img src="assets/icons/fasteners/big.svg" alt="Dropdown image" />
+						</div>
+					</div>
+				</div>
+
+				<button class="button horizontal inline space">
+					<p class="button-text">Включить cкидки</p>
+					<div class="button-icon center">
+						<img src="assets/icons/sale/white.svg" alt="Sale" />
+					</div>
+				</button>
+			</div>
+		</div>
+	</header>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="title">
+					<h2>Оформление заказа</h2>
+				</div>
+				<div class="sec">
+					
+					<div class="sec-right">
+						<div class="lines">
+							<div class="vector"><img src="assets/images/addresss.png" alt="address" /></div>
+							<div class="vl-line"></div>
+							<div class="vector1"><img src="assets/icons/dot.svg" alt="dot." /></div>
+							<div class="vector2"><img src="assets/icons/dot.svg" alt="dot." /></div>
+						</div>
+						<div class="details">
+							<div class="element">
+								<div class="title">
+									<h3>Адрес и способ доставки</h3>
+								</div>
+								<div class="forms">
+									<select id="actSelect" class="Validate_Required " name="actSelect" aria-required="true" onChange="Selected(this)">
+										<option value="" hidden>Способ оплаты</option>
+										<!-- normal options -->
+										<option value="1">Самомывоз</option>
+										<option value="2">Курьер</option>
+									</select>
+								</div>
+
+								<div class="block" id='Block1'>
+									<div class="additionally">
+										<div class="forms">
+											<select class="city">
+												<option value="" hidden>Алматы</option>
+												<!-- normal options -->
+												<option value="1">Город</option>
+												<option value="2">Город</option>
+											</select>
+										</div>
+										<div class="forms">
+											<select class="locality">
+												<option value="" hidden>Населеный пункт</option>
+												<!-- normal options -->
+												<option value="1">Населеный пункт</option>
+												<option value="2">Населеный пункт</option>
+											</select>
+										</div>
+									</div>
+									<div class="additionally">
+										<div class="forms">
+											<form action="">
+												<input type="text" placeholder="Адрес">
+										</div>
+									</div>
+								</div>
+
+							</div>
+							<div class="element">
+								<div class="title">
+									<h3>Получатель</h3>
+								</div>
+								<div class="forms">
+									<form action="">
+										<input type="text" placeholder="Имя">
+										<input type="text" placeholder="Конт. номер">
+									</form>
+								</div>
+							</div>
+							<div class="element">
+								<div class="title">
+									<h3>Оплата</h3>
+								</div>
+								<div class="forms">
+									<select class="payment">
+										<option value="" hidden>Способ оплаты</option>
+										<!-- normal options -->
+										<option value="1">QR</option>
+										<option value="2">Kaspi</option>
+										<option value="3">Halyk</option>
+										<option value="4">Нал</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+					<div class="sec2">
+						<div class="title">
+							<h3>Сумма заказа</h3>
+						</div>
+						<div class="forms">
+							<form action="">
+								<input type="text" placeholder="Промокод">
+							</form>
+						</div>
+						<div class="info">
+							<p>Сумма заказа</p>
+							<p>5 200 тг.</p>
+						</div>
+						<div class="info">
+							<p>Доставка</p>
+							<p>не указано</p>
+						</div>
+						<div class="info">
+							<p>Скидка</p>
+							<p>промокод не задйиствован</p>
+						</div>
+						<div class="line"></div>
+						<div class="price">
+							<p>Итого</p>
+							<p>1 410 тг.</p>
+						</div>
+					</div>
+				
+				<div class="order">
+					<button>Заказать</button>
+				</div>
+				
+				
+			</div>
+		</div>
+	</div>
+
+	<!-- FOOTER -->
+	<footer class="footer">
+		<div class="footer-top">
+			<div class="box horizontal space">
+				<div>
+					<a href="#">
+						<p class="text">Как сделать заказ</p>
+					</a>
+					<a href="#">
+						<p class="text">Способы оплаты</p>
+					</a>
+					<a href="#">
+						<p class="text">Доставка</p>
+					</a>
+					<a href="#">
+						<p class="text">Возврат товара</p>
+					</a>
+					<a href="#">
+						<p class="text">Возврат денежных средств</p>
+					</a>
+					<a href="#">
+						<p class="text">Правила продажи</p>
+					</a>
+					<a href="#">
+						<p class="text">Вопросы и ответы</p>
+					</a>
+				</div>
+
+				<div>
+					<a href="#">
+						<p class="text">Гостинные</p>
+					</a>
+					<a href="#">
+						<p class="text">Мебель для кухни</p>
+					</a>
+					<a href="#">
+						<p class="text">Офисная мебель</p>
+					</a>
+					<a href="#">
+						<p class="text">Детская мебель</p>
+					</a>
+					<a href="#">
+						<p class="text">Прихожие</p>
+					</a>
+					<a href="#">
+						<p class="text">Мебель для спальни</p>
+					</a>
+					<a href="#">
+						<p class="text">Стеллажи</p>
+					</a>
+					<a href="#">
+						<p class="text">Зеркала</p>
+					</a>
+					<a href="#">
+						<p class="text">ЛДСП</p>
+					</a>
+				</div>
+
+				<div>
+					<a href="#">
+						<p class="text">Компания</p>
+					</a>
+					<a href="#">
+						<p class="text">О компании</p>
+					</a>
+					<a href="#">
+						<p class="text">Новости</p>
+					</a>
+					<a href="#">
+						<p class="text">Вакансии</p>
+					</a>
+					<a href="#">
+						<p class="text">Политика</p>
+					</a>
+					<a href="#">
+						<p class="text">Помощь</p>
+					</a>
+				</div>
+
+				<div class="footer-info">
+					<a href="tel:+77010276354" class="horizontal">
+						<div class="footer-info__icon center">
+							<img src="assets/icons/phone.svg" alt="Phone Numb." />
+						</div>
+						<p class="text">+7 (701) 027-63-54</p>
+					</a>
+					<a href="#" class="horizontal">
+						<div class="footer-info__icon center">
+							<img src="assets/icons/envelope.svg" alt="Message" />
+						</div>
+						<p class="text">info@mebelasia.kz</p>
+					</a>
+					<a href="#" class="horizontal">
+						<div class="footer-info__icon center">
+							<img src="assets/icons/map_pin.svg" alt="Location" />
+						</div>
+						<p class="text">г. Алматы, Илийский район, с. Покровка, ул. Степная 35</p>
+					</a>
+				</div>
+
+				<div>
+					<div class="footer-box horizontal inline space">
+						<div>
+							<a href="#">
+								<p class="text">WhatsApp</p>
+							</a>
+							<a href="#">
+								<p class="text">Facebook</p>
+							</a>
+							<a href="#">
+								<p class="text">YouTube</p>
+							</a>
+							<a href="#">
+								<p class="text">Телеграм</p>
+							</a>
+						</div>
+						<div class="qr">
+							<img src="assets/images/qr-code.png" alt="QR for socials" />
+						</div>
+					</div>
+
+					<div class="footer-socials horizontal">
+						<a href="#" class="footer-socials__icon center">
+							<img src="assets/icons/socials/facebook.svg" alt="Facebook" />
+						</a>
+						<a href="https://www.instagram.com/asiamebel/" class="footer-socials__icon center">
+							<img src="assets/icons/socials/instagram.svg" alt="Instagram" />
+						</a>
+						<a href="#" class="footer-socials__icon center">
+							<img src="assets/icons/socials/youtube.svg" alt="Youtube" />
+						</a>
+						<a href="#" class="footer-socials__icon center">
+							<img src="assets/icons/socials/whatsapp.svg" alt="Whatsapp" />
+						</a>
+						<a href="#" class="footer-socials__icon center">
+							<img src="assets/icons/socials/telegram.svg" alt="Telegram" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer-bottom">
+			<div class="box">
+				<p class="text">2004-2024 © Азия Мебель — модный интернет-магазин мебели и фурнитуры. Все права защищены. Доставка по всему Казахстану.</p>
+				<p class="text">На Торговой площадке Азия Мебель применяются рекомендательные товары. Адрес для направления юридически значимых сообщений: info@mebelasia.kz</p>
+			</div>
+		</div>
+	</footer>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/11.0.3/nouislider.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wnumb/1.1.0/wNumb.min.js"></script>
+	<script src="js/indira.js"></script>
+</body>
+</html>

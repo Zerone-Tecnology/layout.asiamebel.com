@@ -1,0 +1,78 @@
+/*# sourceMappingURL=indira.css.map */
+.heading h2{
+  font-size: 25px;
+  color: #474747;
+  font-weight: 400;
+}
+  h3{
+  font-size: 18px;
+  color: #3B3B3B;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.sec{
+  margin-left: 340px;
+}
+.forms input{
+  width: 310px;
+  height: 40px;
+  font-size: 13px;
+  color: #3B3B3B;
+  border-radius: 33px;
+  padding-left: 15px;
+  margin-top: 15px;
+  margin-bottom: 35px;
+  border: 1px solid #959EAD;
+} 
+select {
+  width: 310px;
+  height: 40px;
+  border-radius: 33px;
+  padding-left: 15px;
+  border: 1px solid #959EAD;
+  transition: border-color 0.2s ease,
+              outline 0.2s ease;}
+.sec2{
+  width: 920px;
+  height: auto;
+  background-color: white;
+  border-radius: 5px;
+  padding: 27px 64px 13px 65px;
+  margin-bottom: 28px;
+}
+.info p{
+  font-size: 13px;
+  color: #474747;
+}
+.info p:last-child{
+  font-size: 15px;
+  text-align: right;
+}
+.line{
+  border-bottom: 1px solid #6C6C6C;
+  max-width: 790px;
+  margin: 25px 0;
+}
+.price p{
+  font-size: 15px;
+  color: #474747;
+  text-align: right;
+  margin-bottom: 7px;
+}
+.price p:last-child{
+  font-size: 23px;
+  font-weight: 700;
+  color: #004636;
+  text-align: right;
+}
+.order button{
+  width: 332px;
+  height: 46px;
+  background-color: #4D897B;
+  border-radius: 30px;
+  font-size: 15px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 50px;
+  margin-left: 620px;
+}
