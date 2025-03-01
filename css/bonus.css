@@ -1,0 +1,67 @@
+.bonus-container {
+  padding: 25px 0;
+  font-family: "Rubik", sans-serif;
+}
+.bonus-container .b-title {
+  margin: 15px 0;
+}
+.bonus-container .sub-nav {
+  padding: 0 0 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.bonus-container .sub-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.bonus-container .sub-nav ul li:first-child a {
+  padding-left: 0;
+}
+.bonus-container .sub-nav ul li a {
+  display: flex;
+  padding: 15px;
+}
+.bonus-container .bonus-wrap {
+  padding: 25px 0;
+  color: #6E6E6E;
+}
+.bonus-container .bonus-wrap .block-info {
+  display: flex;
+  border: 2px solid #959EAD;
+  padding: 25px;
+  border-radius: 5px;
+}
+.bonus-container .bonus-wrap .block-info .b-content {
+  padding-left: 25px;
+}
+.bonus-container .bonus-wrap .block-info p {
+  font-size: 24px;
+  line-height: 1.2em;
+}
+.bonus-container .form-wrap {
+  padding: 15px 0;
+}
+.bonus-container .form-wrap .btn-submit {
+  display: block;
+  width: auto;
+  margin: 0 auto;
+  padding: 15px 60px;
+  border-radius: 50em;
+  background-color: #959EAD;
+  color: #fff;
+  margin-top: 25px;
+}
+.bonus-container .btn-profile {
+  padding: 15px;
+}
+.bonus-container .bonus-info-wrap {
+  background-color: #959EAD;
+  border-radius: 5px;
+  padding: 25px;
+  max-width: 320px;
+}
+.bonus-container .bonus-info-wrap .title {
+  margin-bottom: 10px;
+}/*# sourceMappingURL=bonus.css.map */
