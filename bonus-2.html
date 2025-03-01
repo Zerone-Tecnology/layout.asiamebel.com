@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>АЗИЯ МЕБЕЛЬ Bonus</title>
+	<title>АЗИЯ МЕБЕЛЬ Информация о покупателе</title>
 	<link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
@@ -196,21 +196,58 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="bonus-wrap">
-						<div class="b-title">Бонусы</div>
-						<div class="block-info">
-							<div class="img-wrap">
-								<img src="img/icon-warrning.png" alt="Warrning" class="icon icon-warrning">
+						<div class="b-title">Мои заказы</div>
+						<div class="s-title">Информация о покупателе</div>
+						<div class="blocks-wrap">
+							<div class="block left">
+								<div class="b-title">Личная информация</div>
+								<div class="form-wrap">
+									<label for="name">Ф.И.О</label>
+									<input type="text" name="name" placeholder="Имя">
+									<input type="text" name="s_name" placeholder="Фамилия">
+									<input type="text" name="f_name" placeholder="Отчество">
+									<label for="address">Город</label>
+									<select name="city" id="city">
+										<option value="Almaty">Алматы</option>
+										<option value="Astana">Астана</option>
+										<option value="Shymkent">Шымкент</option>
+									</select>
+									<label for="shop">Мой магазин</label>
+									<select name="shop" id="shop">
+										<option value="Выбрать магазин">Выбрать магазин</option>
+										<option value="Almaty">Алматы</option>
+										<option value="Astana">Астана</option>
+										<option value="Shymkent">Шымкент</option>
+									</select>
+									<label for="contact">Контакты</label>
+									<input type="text" name="phone" id="phone" placeholder="+7 777 777 77 77">
+									<input type="email" name="email" id="email" placeholder="Ваша почта">
+									<div class="payment-wrap">
+										<p class="b-title">Платежная система</p>
+										<div class="pay-block">
+											<div class="icon"><img src="img/logo-paypal.png" alt="PayPal"></div>
+											<div class="icon"><img src="img/logo-mastercard.png" alt="Master Card"></div>
+											<div class="icon"><img src="img/logo-visa.png" alt="Visa"></div>
+										</div>
+									</div>
+								</div>
 							</div>
-							<div class="b-content">
-								<p>Вы еще не являетесь участником бонусной программы, но можите им стать, нажав на кнопку “Вступить”</p>
+							<div class="block right">
+								<div class="b-title">Бонусная система</div>
+								<div class="b-content">
+									<div class="b-title">Вам необходимо заполнить ваши данные для получения бонусов. </div>
+									<div class="status-wrap">
+										<div class="img-wrap">
+											<img src="img/bg-status-logo.png" alt="AsiaMebel">
+										</div>
+										<div class="content">
+											<p>Статус</p>
+											<div class="title">Bronze</div>
+										</div>
+									</div>
+									<a href="#" class="btn">Готово</a>
+								</div>
 							</div>
-						</div>
-						<div class="form-wrap">
-							<div class="f-row">
-								<input type="checkbox" name="agree" id="agree">
-								<label for="agree">Нажимая кнопку вступить, я подверждаю что ознакомился с <a href="#">офертой</a>, и <a href="#">правилами программы</a></label>
-							</div>
-							<input type="button" value="Вступить" class="btn btn-submit">
 						</div>
 					</div>
 				</div>

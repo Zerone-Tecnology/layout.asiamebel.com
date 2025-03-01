@@ -1,9 +1,18 @@
+$accent: #959EAD
+
 .bonus-container
   padding: 25px 0
   font-family: "Rubik", sans-serif
 
+  .btn
+    border-radius: 50em
+    background-color: $accent
+    color: #fff
+    padding: 15px 25px
+
   .b-title
     margin: 15px 0
+    font-size: 24px
 
   .sub-nav
     padding: 0 0 15px
@@ -17,16 +26,35 @@
       li
         &:first-child a
           padding-left: 0
+        &.active
+          font-weight: bold
         a
           display: flex
           padding: 15px
-  .bonus-wrap
-    padding: 25px 0
+          color: #6E6E6E
+
+  .btn-profile
+    background-image: url('../img/icon-profile.png')
+    background-repeat: no-repeat
+    background-position: center left
+    padding: 15px 15px 15px 35px
     color: #6E6E6E
+
+  .bonus-wrap
+    color: #6E6E6E
+    padding-bottom: 45px
+
+    .s-title
+      font-size: 30px
+      color: #474747
+      margin-bottom: 15px
+
+    .b-title
+      margin-bottom: 35px
 
     .block-info
       display: flex
-      border: 2px solid #959EAD
+      border: 2px solid $accent
       padding: 25px
       border-radius: 5px
       .icon
@@ -37,25 +65,218 @@
         line-height: 1.2em
   .form-wrap
     padding: 15px 0
+    font-size: 18px
+    a
+      color: #007AFF
+    .f-row
+      padding: 15px 0
+      font-style: italic
 
     .btn-submit
       display: block
       width: auto
       margin: 0 auto
       padding: 15px 60px
-      border-radius: 50em
-      background-color: #959EAD
-      color: #fff
       margin-top: 25px
 
-  .btn-profile
-    padding: 15px
-
-
   .bonus-info-wrap
-    background-color: #959EAD
+    background-color: $accent
     border-radius: 5px
     padding: 25px
-    max-width: 320px
+    max-width: 50%
+    color: #fff
+    display: flex
+    justify-content: space-between
     .title
       margin-bottom: 10px
+      font-size: 20px
+    .img-wrap
+      margin-left: 25px
+    .b-content
+      font-size: 12px
+
+  // page-2
+  .blocks-wrap
+    display: flex
+    .b-title
+      margin-bottom: 15px
+    .block
+      &.right
+        width: 60%
+        padding-left: 25px
+        .b-content
+          border: 2px solid $accent
+          border-radius: 5px
+          padding: 25px
+          .btn
+            margin-top: 55px
+            display: inline-block
+            padding: 15px 45px
+        .status-wrap
+          background-image: url('../img/bg-status.png')
+          background-repeat: no-repeat
+          background-size: cover
+          padding: 15px
+          color: #fff
+          height: 150px
+          display: flex
+          align-items: center
+          .title
+            font-size: 32px
+          .img-wrap
+            padding-left: 25px
+          .content
+            padding-left: 25px
+      &.left
+        width: 40%
+        padding-right: 25px
+        .form-wrap
+          input[type="text"],
+          input[type="email"],
+          select
+            display: block
+            margin: 10px 0
+            padding: 15px
+            border-radius: 15em
+            width: 100%
+            border: 1px solid $accent
+          label
+            font-size: 16px
+    .payment-wrap
+      padding: 25px 0
+      .b-title
+        font-size: 16px
+      .pay-block
+        padding: 15px 0
+        border-top: 1px solid $accent
+        border-bottom: 1px solid $accent
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+  //page-3
+  .bonus-history
+
+    .status-wrap
+      background: rgb(184,143,125)
+      background: linear-gradient(90deg, rgba(184,143,125,1) 0%, rgba(147,89,64,1) 100%)
+      border-radius: 15px
+      box-shadow: 0 5px 5px #ccc
+      padding: 15px
+      color: #fff
+      display: flex
+      justify-content: space-between
+      align-items: center
+      .img-wrap
+        width: 20%
+        padding-left: 5%
+      .content 
+        width: 40%
+        .title 
+          font-size: 32px
+      .balance
+        width: 40%
+        text-align: right
+        padding-right: 5%
+        .title
+          font-size: 28px
+          font-weight: bold
+          span
+            font-size: 16px
+        p
+          text-transform: uppercase
+
+  .bonus-progress-wrap
+    display: flex
+    margin: 25px 0
+    align-items: center
+    .block
+      width: 25%
+      display: flex
+      flex-direction: row
+      flex-wrap: nowrap
+      &.left
+        justify-content: end
+        padding-right: 15px
+      .title
+        color: $accent
+        padding: 0 15px
+      .point
+        color: #6E6E6E
+    .status-line
+      width: 50%
+      height: 10px
+      border-radius: 15em
+      background-color: #E3E3E3
+      border: 1px solid #fff
+      &::after
+        content: ''
+        display: block
+        position: relative
+        border-radius: 15em
+        width: 50%
+        height: 100%
+        left: 0
+        background-color: #6E6E6E
+
+  .bonus-list-wrap
+    .block-wrap
+      .b-title
+        margin-bottom: 15px
+        text-transform: uppercase
+        font-size: 16px
+        font-weight: bold
+      .block
+        font-size: 16px
+        background: #fff
+        border-radius: 5px
+        padding: 15px
+        margin-bottom: 5px
+        .info-wrap
+          display: flex
+          align-items: center
+          justify-content: space-between
+        .date
+          // flex: 1
+          width: 30%
+        .name
+          // flex: 3
+          width: 60%
+        .bonus
+          // flex: 1
+          width: 30%
+          background-image: url('../img/icon-logo.png')
+          background-repeat: no-repeat
+          padding-left: 55px
+        .arr
+          width: 20px
+          height: 20px
+          background-image: url('../img/icon-arr.png')
+          background-repeat: no-repeat
+          background-size: contain
+          cursor: pointer
+
+        .detail-wrap
+          width: 100%
+          display: none
+          margin-top: 25px
+          &.active
+            display: block
+          table
+            width: 100%
+            border-top: 1px solid $accent
+            border-bottom: 1px solid $accent
+            padding-bottom: 15px
+            > tr td
+              border: 1px solid $accent
+            td
+              padding: 5px
+          .total
+            font-size: 28px
+            font-weight: bold
+            color: #4D897B
+            text-align: right
+            width: 100%
+            padding: 25px 0
+            span
+              font-size: 16px

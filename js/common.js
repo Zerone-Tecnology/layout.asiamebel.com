@@ -1,3 +1,7 @@
+$('.arr').on('click', function(){
+	$(this).closest('.block').find('.detail-wrap').toggleClass('active');
+});
+
 // Variables
 const d = document;
 const $q = d.querySelectorAll.bind(d);
