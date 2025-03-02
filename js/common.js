@@ -1,4 +1,5 @@
 $('.arr').on('click', function(){
+	$(this).toggleClass('active');
 	$(this).closest('.block').find('.detail-wrap').toggleClass('active');
 });
 
