@@ -124,7 +124,6 @@
   padding: 15px 45px;
 }
 .bonus-container .blocks-wrap .block.right .status-wrap {
-  background-image: url("../img/bg-status.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 15px;
@@ -132,9 +131,27 @@
   height: 150px;
   display: flex;
   align-items: center;
+  border-radius: 15px;
+  box-shadow: 0 5px 5px #ccc;
+}
+.bonus-container .blocks-wrap .block.right .status-wrap.bronze {
+  background: rgb(184, 143, 125);
+  background: linear-gradient(90deg, rgb(184, 143, 125) 0%, rgb(147, 89, 64) 100%);
+}
+.bonus-container .blocks-wrap .block.right .status-wrap.silver {
+  background: #dbdbdb;
+  background: linear-gradient(90deg, rgb(219, 219, 219) 0%, rgb(173, 173, 173) 100%);
+}
+.bonus-container .blocks-wrap .block.right .status-wrap.gold {
+  background: #ffd980;
+  background: linear-gradient(90deg, rgb(255, 217, 128) 0%, rgb(222, 159, 13) 100%);
+}
+.bonus-container .blocks-wrap .block.right .status-wrap .b-content {
+  border: none;
 }
 .bonus-container .blocks-wrap .block.right .status-wrap .title {
   font-size: 32px;
+  margin: 0;
 }
 .bonus-container .blocks-wrap .block.right .status-wrap .img-wrap {
   padding-left: 25px;
@@ -174,8 +191,6 @@
   align-items: center;
 }
 .bonus-container .bonus-history .status-wrap {
-  background: rgb(184, 143, 125);
-  background: linear-gradient(90deg, rgb(184, 143, 125) 0%, rgb(147, 89, 64) 100%);
   border-radius: 15px;
   box-shadow: 0 5px 5px #ccc;
   padding: 15px;
@@ -183,6 +198,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.bonus-container .bonus-history .status-wrap.bronze {
+  background: rgb(184, 143, 125);
+  background: linear-gradient(90deg, rgb(184, 143, 125) 0%, rgb(147, 89, 64) 100%);
+}
+.bonus-container .bonus-history .status-wrap.silver {
+  background: #dbdbdb;
+  background: linear-gradient(90deg, rgb(219, 219, 219) 0%, rgb(173, 173, 173) 100%);
+}
+.bonus-container .bonus-history .status-wrap.gold {
+  background: #ffd980;
+  background: linear-gradient(90deg, rgb(255, 217, 128) 0%, rgb(222, 159, 13) 100%);
 }
 .bonus-container .bonus-history .status-wrap .img-wrap {
   width: 20%;
@@ -326,4 +353,45 @@
 }
 .bonus-container .bonus-list-wrap .block-wrap .block .detail-wrap .total span {
   font-size: 16px;
+}
+
+.progress {
+  width: 100%;
+  height: 5px;
+}
+
+.progress-wrap {
+  background: #6E6E6E;
+  margin: 5px 0;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+}
+.progress-wrap .progress-bar {
+  background: #ddd;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.bonus-tab-wrap .bonus-tab-list {
+  display: flex;
+}
+.bonus-tab-wrap .bonus-tab-list .b-title {
+  width: 50%;
+  padding: 15px;
+  cursor: pointer;
+}
+.bonus-tab-wrap .bonus-tab-list .b-title:hover {
+  background-color: #ddd;
+}
+.bonus-tab-wrap .bonus-tab-list .b-title.active {
+  background-color: #959EAD;
+  color: #fff;
+}
+.bonus-tab-wrap .bonus-tab {
+  display: none;
+}
+.bonus-tab-wrap .bonus-tab.active {
+  display: block;
 }/*# sourceMappingURL=bonus.css.map */

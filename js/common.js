@@ -71,3 +71,34 @@ function handleModal(id) {
 		d.body.style.overflow = 'hidden';
 	}
 }
+
+
+// on page load...
+moveProgressBar();
+// on browser resize...
+$(window).resize(function() {
+		moveProgressBar();
+});
+
+// SIGNATURE PROGRESS
+function moveProgressBar() {
+	console.log("moveProgressBar");
+		var getPercent = ($('.progress-wrap').data('progress-percent') / 100);
+		var getProgressWrapWidth = $('.progress-wrap').width();
+		var progressTotal = getPercent * getProgressWrapWidth;
+		var animationLength = 2500;
+		
+		// on page load, animate percentage bar to data percentage length
+		// .stop() used to prevent animation queueing
+		$('.progress-bar').stop().animate({
+				left: progressTotal
+		}, animationLength);
+}
+
+$('.bonus-tab-list .b-title').on('click', function(){
+	var panel = $(this).attr('data-panel');
+	$('.bonus-tab-list .b-title').removeClass('active');
+	$(this).addClass('active');
+	$('.bonus-tab').removeClass('active');
+	$('#'+panel).addClass('active');
+})
